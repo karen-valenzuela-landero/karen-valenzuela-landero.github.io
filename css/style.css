@@ -14,6 +14,12 @@ html{
    border-radius: 0px;
    padding: 10px;
 }
+/* ===== ANIMATIONS styles ===== */
+@keyframes rotateY {
+    50% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
 /* ===== NAVBAR styles ===== */
 .navbar{
     grid-area: navbar;
@@ -26,12 +32,11 @@ html{
     }
     #navbarCollapse a:visited{
         font-style: italic;
-
     }
     #navbarCollapse a:hover{
         font-style: italic;
-
     }
+
 /* ===== HEADER styles ===== */
 .header{
     grid-area: header;
@@ -67,9 +72,10 @@ html{
             gap: 30px;
             padding: 20px 0;
         }
-            #social-networks i{
+            .social-networks i{ /* -- ALL <i> socialnetworks icons styles -- */
                 color: #E2E2E5;
                 font-size: 2em;
+                animation: rotateY 7s linear infinite;
             }
         #interest-data{
             display: flex;
@@ -105,7 +111,9 @@ html{
             flex-shrink: 0;
             border-radius: 1000px;
             border: 10px solid #6A5800;
+            
         }
+
 /* ===== MAIN styles ===== */
 .main{
     grid-area: main;
@@ -218,9 +226,13 @@ html{
         color: #FFFFFF;
         text-decoration: none;
     }
+    .tools .card-link:hover {
+        background-color: #C1A000;
+    }
     .githubproject i{
             color: #CCCCCC;
             font-size: 2em;
+            animation: rotateY 7s linear infinite;
     }
 /* ===== ABOUT-ME styles ===== */
 #about-me{
@@ -287,25 +299,27 @@ html{
                 font-weight: 400;
                 line-height: normal; 
             }
-        #contactform{
+        #contact-form{
             text-align: left;
         }
-            #contactform label{
+            #contact-form label{
                 color: #FFF;
                 font-size: 16px;
                 font-weight: 400;
             }
-            #contactform input{
+            #contact-form input{
+                color: #F4F4F4;
                 border-radius: 10px;
                 background: rgba(255, 255, 255, 0.25);
                 border: 0;
             }
-            #contactform textarea{
+            #contact-form textarea{
+                color: #F4F4F4;
                 border-radius: 10px;
                 background: rgba(255, 255, 255, 0.25);
                 border: 0;
             }
-            #contactform ::placeholder{
+            #contact-form ::placeholder{
                 color: rgba(0, 0, 0, 0.25);
                 font-family: Inter;
                 font-size: 16px;
