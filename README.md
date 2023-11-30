@@ -1,5 +1,7 @@
 # karen-valenzuela-landero.github.io
 My Professional Portfolio Project
+<br>
+[FIGMA Portfolio Design](https://www.figma.com/file/rf2ppNqg4Uiq8gv55b1mHS/Portfolio?type=design&node-id=0%3A1&mode=design&t=xw0ACCvLs6HgiUzr-1)
 
 ---
 
@@ -91,8 +93,11 @@ class About extends Me {
             Azure DevOps TestPlan::class,
             Test & Feedback plugin::class,
             Postman::class,
+            Figma::class
         ];
     }
 }
 ```
+
+
 
