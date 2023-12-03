@@ -90,10 +90,6 @@ function validate(txtName, txtMail, txtMessage){
     return true;
 }//validate contact form
 
-/* (function () {
-    emailjs.init('4KBe--5Op9om1VvvF');
-})();// init emailJS */
-
 const serviceID = 'outllok_service_ekle2qx';
 const templateID = 'Portfolio_Contact_Form';
 
@@ -125,15 +121,10 @@ submit.addEventListener("click", function(event){
                 cleanForm();         
             }, function (error) {
                 console.log('FAILED...', error);
-                failedMsg( "Your message couldn't been sent");          
+                failedMsg( "Your message couldn't been sent. Please, Try again"); 
             });//emailJS
     }//isValid
 });//submit button
 
-
-
-
-
-//in footer  => Scroll to the top
-//add botón de flecha hacia arriba y ejecutarlo onClick
 const toTop =() => window.scrollTo(0,0);
+//Scroll to the top
