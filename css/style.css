@@ -16,9 +16,18 @@ html{
 }
 /* ===== ANIMATIONS styles ===== */
 @keyframes rotateY {
-    50% {
-        transform: perspective(400px) rotateY(360deg);
-    }
+    50% { transform: perspective(400px) rotateY(360deg); }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+} 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    /* //Copy/Paste in text to implement this animation
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; */
 }
 /* ===== NAVBAR styles ===== */
 .navbar{
@@ -57,8 +66,7 @@ html{
         padding: 40px 0; 
     }
         hgroup #myName{
-            font-size: 35px;
-            letter-spacing: 0.9px;
+             
             padding: 15px 0;
         }
         hgroup p{
@@ -111,7 +119,7 @@ html{
             flex-shrink: 0;
             border-radius: 1000px;
             border: 10px solid #6A5800;
-            
+            animation: blink .7s step-end infinite alternate;
         }
 
 /* ===== MAIN styles ===== */
@@ -161,39 +169,25 @@ html{
         background-color: rgba(71, 31, 198, 0.15);
         border-radius: 20px;
         gap: 24px;
+        
     }
     #skills-cards img{
         width: 128px;
         height: 128px;
     }
-    /* #skills-cards p{
-        color: #E2E2E5;
-        text-align: center;
-        font-size: 20px;
-        margin: 0;
-    } */
+    #skills-cards a{
+        text-decoration: none;
+    } 
     #skill-card span{
-        display: block;
+        /* display: block; */
         font-family: monospace;
         color: #E2E2E5;
         text-align: center;
         font-size: 2.5ch;
-        
-        
-        width: 10ch; 
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 2px solid;
-
-        animation: typing 2s steps(10),
-        blink .5s step-end infinite alternate;
+        border-right: 0.08em solid;
+        animation: blink .3s step-end infinite alternate; 
     }
-    @keyframes typing {
-        from { width: 0}
-    }
-    @keyframes blink {
-        50% {border-color: transparent;}
-    }
+    
 /* ===== PROJECTS styles ===== */
 #projects{
     grid-area: projects;
@@ -454,7 +448,7 @@ html{
       grid-template-columns: repeat(1, 1fr);
     }
     #skills-cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     #projects-cards {
         grid-template-columns: repeat(1, 1fr);
@@ -475,3 +469,8 @@ html{
         padding: 0;
     }
   }
+  @media only screen and (max-width: 425px) {
+    #skills-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
