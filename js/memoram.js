@@ -1,6 +1,4 @@
 
-
-
 		var ctx, canvas;
 		var primerCarta = true;
 		var cartaPrimera, cartaSegunda;
@@ -42,6 +40,7 @@
 			canvas.height=510;
 			if(canvas && canvas.getContext){
 				ctx = canvas.getContext("2d");
+                console.log(ctx);
 				if(ctx){
 					canvas.removeEventListener("click",iniciar,false);
 					canvas.addEventListener("click",selecciona,false);
@@ -120,6 +119,7 @@
 			for(var i=0; i<cartas_array.length; i++){
 				var carta = cartas_array[i];
 				if(carta.x>0){
+                    console.log(carta.x);//
 					if( (pos.x>carta.x) && (pos.x<carta.x+carta.ancho) && (pos.y>carta.y) && (pos.y<carta.y+carta.largo)){
 						if((primerCarta) || (i!=cartaPrimera)) {
 							break;

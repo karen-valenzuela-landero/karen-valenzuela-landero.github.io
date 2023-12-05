@@ -42,7 +42,10 @@ html{
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
       transform: translatey(0px);
     }
-  }
+}
+@keyframes blink-text {
+    50% { text-shadow: #FFB800 1px 0px 20px }
+}
 /* ===== NAVBAR styles ===== */
 .navbar{
     grid-area: navbar;
@@ -53,13 +56,10 @@ html{
         color: #6A5800;
         font-size: 22px;
     }
-    #navbarCollapse a:visited{
-        font-style: italic;
-    }
     #navbarCollapse a:hover{
         font-style: italic;
+        /* text-shadow: #FFB800 1px 0px 20px ; */
     }
-
 /* ===== HEADER styles ===== */
 .header{
     grid-area: header;
@@ -80,10 +80,14 @@ html{
         padding: 40px 0; 
     }
         hgroup #myName{
-             
+            font-family: 'Heebo', sans-serif;
+            font-size: 2em;
             padding: 15px 0;
+            /* text-shadow: #FFB800 1px 0px 20px ; */
+            animation: blink-text .5s step-end infinite alternate; 
         }
         hgroup p{
+            font-family: 'Poppins', sans-serif;
             font-size: 25px;
             letter-spacing: 0.7px;
             margin: 0;
@@ -105,6 +109,7 @@ html{
             gap: 30px;
             justify-content: center;
             align-items: center;
+            font-family: 'Poppins', sans-serif;
         }
             .data{
                 width: 195px;
@@ -118,6 +123,7 @@ html{
                 border-radius: 10px;
                 padding: 10px 20px;
                 cursor: pointer;
+                font-family: 'Heebo', sans-serif;
                 font-size: 20px;
                 color: #E2E2E5;
             }
@@ -145,6 +151,7 @@ html{
 /* ===== HGROUP styles for all sections ===== */
 .heading-section{
     padding: 60px 120px;
+    font-family: 'Heebo', sans-serif;
 }
 .ask-section{
     color: #6A5800;
@@ -170,7 +177,7 @@ html{
 #skills-cards{
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
 }
     #skills-cards img{
@@ -241,6 +248,7 @@ html{
         border-radius: 10px;
         background-color: #1F1F1F;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Open Sans', sans-serif;
     }
     #projects-cards .card:hover {
         box-shadow: 0 5px 20px 0px rgba(222, 187, 12, 0.6);
@@ -302,6 +310,7 @@ html{
     }
         #resume {
             color: #F4F4F4;
+            font-family: 'Heebo', sans-serif;
             font-size: 24px;
             text-align: left;  
         }
@@ -334,6 +343,7 @@ html{
         }
             #contact-title{
                 color: #FFB800;
+                font-family: 'Permanent Marker', cursive;
                 font-size: 36px;
                 font-style: normal;
                 font-weight: 400;
@@ -341,6 +351,7 @@ html{
             }
             #contact-text{
                 color: #FFF;
+                font-family: 'Poppins', sans-serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -351,6 +362,7 @@ html{
         }
             #contact-form label{
                 color: #FFF;
+                font-family: 'Poppins', sans-serif;
                 font-size: 16px;
                 font-weight: 400;
             }
@@ -392,7 +404,7 @@ html{
                 text-wrap: nowrap;
                 
             }
-            #submit:hover{
+            #submit:hover, #submit:active{
                 box-shadow: 0 5px 10px 0px #FFB800;
             }
 /* ===== FOOTER styles ===== */
@@ -405,6 +417,7 @@ html{
     color: #020202;
 }
     #footer-container ul{
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;
         display: flex;
         gap: 20px;
@@ -416,14 +429,16 @@ html{
         #footer-container li{
             list-style: none;
         }
-        #footer-container a:hover{
-            box-shadow: 0 5px 10px 0px #FFB800;
+        #footer-container li:hover{
+            text-shadow: #FFB800 1px 0px 20px ;
         }
     #footer-container #myName{
+        font-family: 'Permanent Marker', cursive;
         font-size: 36px;
         margin: 0;
     }
     #footer-container #copyright{
+        font-family: 'Poppins', sans-serif;
         font-size: 12px;
         margin: 0;
     }
