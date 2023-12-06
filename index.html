@@ -22,7 +22,7 @@
 
     <!--===== NAVBAR [HTML Implemented]=====--> 
     <nav id="navbar" class="navbar">
-        <div class="container" id="nav-container">
+        <div class="container-fluid" id="nav-container">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-right">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"> &lt; &gt</a>
@@ -59,7 +59,7 @@
     
     <!--===== HEADER [HTML Implemented]=====--> 
     <header id="header" class="header">
-        <div id="header-container" class="container">
+        <div id="header-container" class="container-fluid">
             <hgroup>
                 <p id="myName"><strong>Karen Valenzuela Landero</strong></p>
                 <p> <strong>Web Developer</strong> | <strong>QA Engineer</strong></p>
@@ -103,7 +103,7 @@
                 <hgroup id="memorama-title" style="display: none;">
                     <h1 >Memorama Canvas</h1>
                 </hgroup>
-                <div id="skills-cards" class="container" > <!-- TODO: Insert skills cards from JS HERE--> 
+                <div id="skills-cards" class="container-fluid" > <!-- TODO: Insert skills cards from JS HERE--> 
                     <div id="skill-card" class="flip-card">
                         <div class="flip-card-front">
                             <img src="./src/icons/html5.png" alt="">
@@ -228,7 +228,7 @@
                     <p class="ask-section">JOB AND SELF EXPERIENCE</p>
                     <p class="title-section">PROJECTS</p>
                 </hgroup>
-                <div id="projects-cards" class="container" > <!-- TODO: Insert projects cards from JS HERE--> 
+                <div id="projects-cards" class="container-fluid" > <!-- TODO: Insert projects cards from JS HERE--> 
                     <div id="project-card" class="card"  >
                         <img id="portfolio" src="./src/projects/project-preview.png" class="card-img-top" alt="Portfolio Project">
                         <div class="card-body">
@@ -373,10 +373,10 @@
 
     <!--===== FOOTER [HTML Implemented]=====-->
     <footer class="footer">
-      <div id="footer-container"class="container" >
+      <div id="footer-container"class="container-fluid" >
         <ul>
             <li class="nav-item">
-            <a class="nav-link" aria-current="page"  href="#header">Home</a>
+            <a class="nav-link" href="#header">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
@@ -409,6 +409,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/memorama.js"></script>
+    <!-- <script src="./js/memorama.js"></script> -->
 </body>
 </html>

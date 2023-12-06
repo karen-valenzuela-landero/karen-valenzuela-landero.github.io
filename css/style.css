@@ -49,8 +49,9 @@ html{
 /* ===== NAVBAR styles ===== */
 .navbar{
     grid-area: navbar;
-    background-color: #282828;
+    width: 100%;
     height: fit-content;
+    background-color: #282828;
 }
     .navbar-brand{
         color: #6A5800;
@@ -63,18 +64,19 @@ html{
 /* ===== HEADER styles ===== */
 .header{
     grid-area: header;
-    background-color: #150549;
+    width: 100%;
     height: fit-content;
+    background-color: #150549;
 }
 #header-container{
-    color: #E2E2E5;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
+    width: 100%;
+    margin: 0;
+    color: #E2E2E5;
 }
     hgroup{
         padding: 40px 0; 
@@ -145,8 +147,9 @@ html{
 /* ===== MAIN styles ===== */
 .main{
     grid-area: main;
-    background-color: #282828;
+    width: 100%;
     height: fit-content;
+    background-color: #282828;
 }
 /* ===== HGROUP styles for all sections ===== */
 .heading-section{
@@ -167,18 +170,23 @@ html{
 /* ===== SKILLS styles ===== */
 #skills{
     grid-area: skills;
+    width: 100%;
     height: fit-content;
 }
 #skills-container{
+    width: 100%;
+    height: fit-content;
     padding: 0;
     margin: 0;
-    width:100%;
 }
 #skills-cards{
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 }
     #skills-cards img{
         width: 128px;
@@ -225,15 +233,20 @@ html{
 /* ===== PROJECTS styles ===== */
 #projects{
     grid-area: projects;
+    width: 100%;
     height: fit-content;
-}
-#projects-container{
     padding: 0;
     margin: 0;
-    width:100%;
+}
+#projects-container{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 }
 #projects-cards{
     padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
@@ -292,21 +305,29 @@ html{
 /* ===== ABOUT-ME styles ===== */
 #about-me{
     grid-area: aboutme;
-    background-color: #020202;
+    width: 100%;
     height: fit-content;
-}
-#aboutme-container{
     padding: 0;
     margin: 0;
-    width:100%;
+    background-color: #020202;
+}
+#aboutme-container{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 }
     #resume-container{
-        justify-content: center;
-        align-items: center;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-column-gap: 1em;
-        padding: 0 120px;
+        width: 100%;
+        height: fit-content;
+        
+        margin: 0;
+        padding: 0 80px;
+        justify-content: center;
+        align-items: center;
     }
         #resume {
             color: #F4F4F4;
@@ -336,6 +357,7 @@ html{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 6em;
         padding: 0 160px; 
+        margin: 0;
     }
         #letstalk{
             text-align: left;
@@ -415,6 +437,7 @@ html{
 }
 #footer-container{
     color: #020202;
+    margin: 0;
 }
     #footer-container ul{
         font-family: 'Poppins', sans-serif;
