@@ -335,6 +335,9 @@ html{
             font-size: 24px;
             text-align: left;  
         }
+        #selfie {
+            padding-bottom: 30px;
+        }
         #selfie img{
             width: 80%;
             border-radius: 10px;
@@ -357,7 +360,7 @@ html{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 6em;
         padding: 0 160px; 
-        margin: 0;
+        margin: 0 auto;
     }
         #letstalk{
             text-align: left;
