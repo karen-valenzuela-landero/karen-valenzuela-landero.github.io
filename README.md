@@ -10,7 +10,7 @@ My Professional Portfolio Project
  <br>
  <p>👩‍💻 Software Engineer </p>
  <p>🌟 QA Engineer since 2020</p>
- <p>✍🏼 FullStack Java Developer in progress...</p>
+ <p>✍🏼 FullStack Java Developer Jr </p>
 </div>
 
 ---
