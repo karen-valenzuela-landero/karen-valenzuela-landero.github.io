@@ -137,7 +137,7 @@ html{
         align-items: center;
     }
         #photo img{
-            width: 90%;
+            width: 50%;
             flex-shrink: 0;
             border-radius: 1000px;
             border: 10px solid #6A5800;
